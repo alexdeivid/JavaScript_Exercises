@@ -32,6 +32,8 @@ function showMe() {
   var showDiv = document.getElementById("result");
   if (showDiv.style.display === "") {
     showDiv.style.display = "flex";
+  } else if (showDiv.style.display === "none") {
+    showDiv.style.display = "flex";
   } else {
     showDiv.style.display = "none";
   }
