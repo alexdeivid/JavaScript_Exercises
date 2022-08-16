@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Cadastro Recrutas</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" style="width: 36rem">
+        <div class="mb-3"><h1>Dados Pessoais</h1></div>
+        <form id="myForm" name="myForm">
+          <div class="mb-3">
+            <label for="firstName" class="form-label">Primeiro Nome</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              name="firstName"
+              aria-describedby="insertName"
+              value=""
+            />
+            <div id="secondName" class="form-text"></div>
+          </div>
+          <div class="mb-3">
+            <label for="surName" class="form-label">Sobrenome</label>
+            <input
+              type="text"
+              class="form-control"
+              name="surName"
+              id="surName"
+              value=""
+            />
+          </div>
+          <div class="mb-3">
+            <label for="studyField" class="form-label">Campo de estudos</label>
+            <input
+              type="text"
+              class="form-control"
+              name="studyField"
+              id="studyField"
+              value=""
+            />
+          </div>
+          <div class="mb-3">
+            <label for="birthYear" class="form-label">Ano de nascimento</label>
+            <input
+              type="text"
+              class="form-control"
+              name="birthYear"
+              id="birthYear"
+              value=""
+            />
+          </div>
+          <button
+            id="button"
+            onclick="fullName(),showMe()"
+            class="btn btn-primary"
+          >
+            Submit
+          </button>
+          <button
+            type="reset"
+            id="reset"
+            onclick="showMe()"
+            class="btn btn-primary"
+          >
+            Reset
+          </button>
+          <div class="mb-1 mt-2 result" id="result">
+            <p id="result" name="result" value=""></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
