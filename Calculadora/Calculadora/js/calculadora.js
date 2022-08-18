@@ -155,6 +155,17 @@ function number1(numbers) {
         alert("Por favor digite um número");
       }
       break;
+    case "/":
+      if (n1 !== "") {
+        n2 = n1;
+        document.getElementById("calcDisplaySup").innerHTML = n2;
+        n1 = "";
+        operator = "/";
+        document.getElementById("calcDisplay").innerHTML = "";
+      } else {
+        alert("Por favor digite um número");
+      }
+      break;
     case "pct":
       if (n1 !== "" && n2 == "") {
         n2 = n1;
